@@ -1,0 +1,21 @@
+luizfelipe@~ $ keytool -genkey -keyalg RSA -alias javaclient -keystore javaclient.jks -storepass password -validity 360
+Qual é o seu nome e o seu sobrenome?
+  [Unknown]:  nome.sobrenome
+Qual é o nome da sua unidade organizacional?
+  [Unknown]:  unidade.organizacional
+Qual é o nome da sua empresa?
+  [Unknown]:  empresa
+Qual é o nome da sua Cidade ou Localidade?
+  [Unknown]:  cidade
+Qual é o nome do seu Estado ou Município?
+  [Unknown]:  estado
+Quais são as duas letras do código do país desta unidade?
+  [Unknown]:  es
+CN=nome.sobrenome, OU=unidade.organizacional, O=empresa, L=cidade, ST=estado, C=es Está correto?
+  [não]:  sim
+
+Informar a senha da chave de <javaclient>
+        (RETURN se for igual é senha da área do armazenamento de chaves): password
+
+luizfelipe@~ $ keytool -export -alias javaclient -file javaclient.crt -keystore javaclient.jks -storepass password
+Certificado armazenado no arquivo <javaclient.crt>

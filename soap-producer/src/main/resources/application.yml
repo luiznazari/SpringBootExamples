@@ -1,0 +1,18 @@
+logging:
+  level:
+    hello: INFO
+    org:
+      springframework:
+        ws: DEBUG
+       
+# Habilita HTTPs com SOAP + certificado 
+server:
+  port: 8080
+  ssl:
+    key-alias: selfsigned
+    key-store: classpath:keystore.jks
+    key-store-password: password
+    trust-store: classpath:truststore.jks
+    trust-store-password: password
+    client-auth: need
+    # Is important to set the server.ssl.client-auth to need in order to make the client authentication mandatory

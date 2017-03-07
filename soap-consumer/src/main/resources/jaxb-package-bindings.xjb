@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings version="2.1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- 'schemaLocation' é a localização do arquivo das especificações das classes geradas. -->
+	<!-- 'node' é o XPath indicando o elemento do arquivo em 'schemaLocation' a ser escaneado. -->
+	
+	<jaxb:bindings schemaLocation="schemas/countries.ssl.wsdl" node="//xs:schema">
+		<jaxb:schemaBindings>
+			<jaxb:package name="io.spring.guides.gs_producing_web_service" />
+		</jaxb:schemaBindings>
+	</jaxb:bindings>
+	
+</jaxb:bindings>

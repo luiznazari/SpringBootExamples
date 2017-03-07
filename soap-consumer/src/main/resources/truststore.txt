@@ -1,0 +1,34 @@
+luizfelipe@~ $ keytool -import -alias javaclient -file javaclient.crt -keystore truststore.jks -storepass password
+Proprietário: CN=nome.sobrenome, OU=unidade.organizacional, O=empresa, L=cidade, ST=estado, C=es
+Emissor: CN=nome.sobrenome, OU=unidade.organizacional, O=empresa, L=cidade, ST=estado, C=es
+Número de série: 3578b481
+Válido de: Thu Mar 02 00:29:35 BRT 2017 a: Sun Feb 25 00:29:35 BRT 2018
+Fingerprints do certificado:
+         MD5:  17:B1:14:7C:AF:F1:E7:F7:6D:C3:19:AF:DB:E9:E1:A6
+         SHA1: 0E:E4:15:47:19:9E:25:54:62:25:DF:29:9A:01:CB:07:F9:91:69:BA
+         SHA256: BA:AF:36:C4:9C:95:D1:A3:7C:6A:D6:77:29:38:7C:56:DF:86:5A:54:4F:1C:D9:1E:D3:D8:12:00:31:60:38:63
+         Nome do algoritmo de assinatura: SHA256withRSA
+         Versão: 3
+
+Extensões:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 41 E0 1A A6 53 C4 55 9B   CD 8E A6 70 1C 6E C8 F1  A...S.U....p.n..
+0010: 1D 0C BA 80                                        ....
+]
+]
+
+Confiar neste certificado? [não]:  sim
+O certificado foi adicionado à área de armazenamento de chaves
+
+luizfelipe@~ $ keytool -list -keystore truststore.jks -storepass password
+
+Tipo de área de armazenamento de chaves: JKS
+Fornecedor da área de armazenamento de chaves: SUN
+
+Sua área de armazenamento de chaves contém 1 entrada
+
+javaclient, 02/03/2017, trustedCertEntry,
+Fingerprint (SHA1) do certificado: 0E:E4:15:47:19:9E:25:54:62:25:DF:29:9A:01:CB:07:F9:91:69:BA

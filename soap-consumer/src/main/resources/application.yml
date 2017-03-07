@@ -1,0 +1,16 @@
+logging:
+  level:
+    hello: INFO
+    org:
+      springframework:
+        ws: DEBUG
+        
+server:
+    port: 8000
+    
+apitest:
+  ws:
+    key-store: classpath:javaclient.jks
+    key-store-password: password
+    trust-store: keystore.jks
+    trust-store-password: password
